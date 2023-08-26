@@ -1,0 +1,135 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background: #e5ebf4;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 150px rgba(2, 0, 0, 0.1);
+    border-color: rgba(2, 0, 0, 0.1);
+    margin: auto;
+    margin-top:5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+#eventlocation {
+  width: 100%;
+ margin-top:8px;
+ border-radius: 10px;
+  border: 1px solid #969696; /* Add a border for better visibility */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+  padding: 10px; /* Add some padding for spacing inside the field */
+  font-size: 16px; /* Set an appropriate font size */
+  resize: vertical; /* Allow vertical resizing of the field */
+  height:50px;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #969696;
+  border-radius: 10px;
+  padding: 0 15px;
+  background-color: #fff;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+#btn1 {
+  height: auto;
+  width: 100%;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 30px;
+  
+  margin-left: 0; /* Adjust the margin-left value as needed */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(79, 153, 231);
+}
+
+#btn1:hover {
+  background: rgb(88, 56, 250);
+}
+
+
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Upload Image...';
+  color: rgb(159, 154, 154);
+  display:inline-flex;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  font-size: 100%;
+  margin-bottom: 0%;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
